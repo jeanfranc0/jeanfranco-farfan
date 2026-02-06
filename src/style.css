@@ -117,7 +117,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .item-purple { background: var(--p-purple); color: #7e22ce; }
 .item-yellow { background: var(--p-yellow); color: #a16207; }
 
-/* Educación en formato vertical (estilo Publications) */
+/* Educación en formato timeline (igual a Professional Experience) */
 .edu-list {
   display: flex;
   flex-direction: column;
@@ -126,6 +126,10 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 }
 
 .edu-row {
+  margin-bottom: 0;
+}
+
+.edu-card {
   display: flex;
   gap: 24px;
   align-items: flex-start;

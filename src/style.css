@@ -222,7 +222,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 }
 
 @media (max-width: 900px) {
-  .edu-card {
+  .edu-row {
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;

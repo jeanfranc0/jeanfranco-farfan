@@ -133,6 +133,16 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edu-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.12);
 }
 
 .edu-pdf-cover {
@@ -160,11 +170,10 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .edu-info .year {
   display: inline-block;
   font-weight: 700;
-  color: #1e40af;
-  background: #dbeafe;
-  padding: 4px 10px;
-  border-radius: 999px;
-  margin-bottom: 8px;
+  color: #0f172a;
+  font-size: 2.15rem;
+  line-height: 1;
+  margin-bottom: 6px;
 }
 
 .edu-info h4 {
@@ -173,20 +182,11 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   font-size: 1.8rem;
 }
 
-.edu-info p {
-  margin: 0 0 10px;
-}
-
-.edu-theme-phd .timeline-marker {
-  background: linear-gradient(145deg, #2563eb, #1e3a8a);
-}
-
-.edu-theme-msc .timeline-marker {
-  background: linear-gradient(145deg, #0f766e, #115e59);
-}
-
-.edu-theme-bsc .timeline-marker {
-  background: linear-gradient(145deg, #7c3aed, #5b21b6);
+.edu-theme-phd,
+.edu-theme-msc,
+.edu-theme-bsc {
+  background: linear-gradient(165deg, #ffffff 0%, #f8fafc 100%);
+  border-left: 6px solid #6d4aff;
 }
 
 .thesis-box {
@@ -320,6 +320,9 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .timeline-content h3 {
   margin: 8px 0 12px;
   color: #0f172a;
+  font-size: 2.15rem;
+  line-height: 1;
+  margin-bottom: 6px;
 }
 
 .timeline-content ul {
@@ -612,6 +615,9 @@ input:focus { border-color: var(--primary); }
 
 .pub-info strong {
   color: #0f172a;
+  font-size: 2.15rem;
+  line-height: 1;
+  margin-bottom: 6px;
 }
 
 .pub-links {

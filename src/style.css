@@ -131,9 +131,9 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 
 .edu-card {
   display: flex;
-  gap: 24px;
+  gap: 18px;
   align-items: flex-start;
-  padding: 24px;
+  padding: 20px;
   border-radius: 18px;
   border: 1px solid #dbeafe;
   box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
@@ -146,7 +146,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 }
 
 .edu-pdf-cover {
-  flex: 0 0 220px;
+  flex: 0 0 190px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #dbeafe;
@@ -158,7 +158,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .edu-pdf-cover embed {
   display: block;
   width: 100%;
-  height: 290px;
+  height: 250px;
   border: 0;
   background: #ffffff;
 }
@@ -169,9 +169,9 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 
 .edu-info .year {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 400;
   color: #0f172a;
-  font-size: 2.15rem;
+  font-size: 1.3rem;
   line-height: 1;
   margin-bottom: 6px;
 }
@@ -179,14 +179,14 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .edu-info h4 {
   margin: 10px 0 8px;
   color: #0f172a;
-  font-size: 1.8rem;
+  font-size: 1.55rem;
 }
 
 .edu-theme-phd,
 .edu-theme-msc,
 .edu-theme-bsc {
-  background: linear-gradient(165deg, #ffffff 0%, #f8fafc 100%);
-  border-left: 6px solid #6d4aff;
+  background: linear-gradient(165deg, #fdfbff 0%, #f7f2ff 100%);
+  border-left: 6px solid #c4b5fd;
 }
 
 .thesis-box {
@@ -195,7 +195,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   border-radius: 12px;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  font-size: 0.96rem;
+  font-size: 0.9rem;
   line-height: 1.45;
 }
 
@@ -203,11 +203,11 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 10px;
   color: #1d4ed8;
   text-decoration: none;
   font-weight: 700;
-  padding: 8px 12px;
+  padding: 7px 10px;
   border-radius: 10px;
   background: #eff6ff;
   border: 1px solid #bfdbfe;

@@ -249,30 +249,50 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 /* Experiencia Vertical */
 .vertical-timeline {
   position: relative;
-  border-left: 3px solid #dbeafe;
-  margin-left: 22px;
-  padding-left: 44px;
+  border-left: 4px solid #bfdbfe;
+  margin-left: 28px;
+  padding-left: 56px;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 38px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -48px;
+  top: 56px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.25);
 }
 
 .timeline-marker {
   position: absolute;
-  left: -60px;
-  width: 36px;
-  height: 36px;
+  left: -72px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #ffffff;
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.28);
-  font-size: 0.95rem;
+  border: 5px solid #ffffff;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.35), 0 0 0 6px rgba(59, 130, 246, 0.14);
+  font-size: 1.25rem;
   color: #ffffff;
   background: linear-gradient(145deg, #3b82f6, #1d4ed8);
+}
+
+.timeline-marker::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px dashed rgba(59, 130, 246, 0.35);
 }
 
 .timeline-content {
@@ -281,7 +301,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   border-radius: 16px;
   box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
   border: 1px solid #e2e8f0;
-  border-left: 5px solid #93c5fd;
+  border-left: 6px solid #60a5fa;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -341,10 +361,11 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   }
 
   .timeline-marker {
-    left: -44px;
-    width: 30px;
-    height: 30px;
-    font-size: 0.82rem;
+    left: -52px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-width: 4px;
   }
 
   .timeline-content {
@@ -550,7 +571,7 @@ input:focus { border-color: var(--primary); }
 .pub-info .journal {
   color: var(--primary);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   margin-bottom: 5px;
   text-transform: uppercase;
 }

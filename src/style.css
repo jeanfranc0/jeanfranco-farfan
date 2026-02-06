@@ -117,7 +117,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .item-purple { background: var(--p-purple); color: #7e22ce; }
 .item-yellow { background: var(--p-yellow); color: #a16207; }
 
-/* Educación en formato timeline (igual a Professional Experience) */
+/* Educación en formato vertical (estilo Publications) */
 .edu-list {
   display: flex;
   flex-direction: column;
@@ -126,13 +126,19 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 }
 
 .edu-row {
-  margin-bottom: 0;
-}
-
-.edu-card {
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edu-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.12);
 }
 
 .edu-pdf-cover {
@@ -160,33 +166,30 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .edu-info .year {
   display: inline-block;
   font-weight: 700;
-  color: #1e40af;
-  background: #dbeafe;
-  padding: 4px 10px;
-  border-radius: 999px;
-  margin-bottom: 8px;
+  color: #0f172a;
 }
 
 .edu-info h4 {
   margin: 10px 0 8px;
   color: #0f172a;
-  font-size: 1.8rem;
 }
 
-.edu-info p {
-  margin: 0 0 10px;
+.edu-theme-phd,
+.edu-theme-msc,
+.edu-theme-bsc {
+  background: linear-gradient(165deg, #ffffff 0%, #f8fafc 100%);
 }
 
-.edu-theme-phd .timeline-marker {
-  background: linear-gradient(145deg, #2563eb, #1e3a8a);
+.edu-theme-phd {
+  border-left: 4px solid #2563eb;
 }
 
-.edu-theme-msc .timeline-marker {
-  background: linear-gradient(145deg, #0f766e, #115e59);
+.edu-theme-msc {
+  border-left: 4px solid #0f766e;
 }
 
-.edu-theme-bsc .timeline-marker {
-  background: linear-gradient(145deg, #7c3aed, #5b21b6);
+.edu-theme-bsc {
+  border-left: 4px solid #7c3aed;
 }
 
 .thesis-box {
@@ -222,7 +225,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 }
 
 @media (max-width: 900px) {
-  .edu-card {
+  .edu-row {
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;

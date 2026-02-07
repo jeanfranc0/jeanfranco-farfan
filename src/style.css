@@ -186,7 +186,7 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
 .edu-theme-msc,
 .edu-theme-bsc {
   background: linear-gradient(165deg, #fdfbff 0%, #f7f2ff 100%);
-  border-left: 6px solid #c4b5fd;
+  border-left: none;
 }
 
 .thesis-box {
@@ -424,35 +424,69 @@ nav a { text-decoration: none; color: var(--dark); font-weight: 500; }
   transition: background 0.3s ease;
 }
 
-/* Para alinear icono y texto en una sola fila */
-.award-item {
-  display: flex;
-  align-items: center; /* Alinea verticalmente al centro */
-  gap: 12px;           /* Espacio entre el icono y el texto */
-  margin-bottom: 8px;  /* Reduce el espacio entre líneas de premios */
+/* Awards & Recognition */
+#awards .awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
 }
 
-.award-item p {
-  margin: 0;           /* Quita el margen extra para que no haya espacio vacío */
+#awards .award-item {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #dbeafe;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
+#awards .award-item i {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  color: #1d4ed8;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+#awards .award-item p {
+  margin: 0;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+#awards .award-item p strong {
+  color: #1e3a8a;
+}
+
+@media (max-width: 640px) {
+  #awards .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #awards .award-item {
+    grid-template-columns: 46px 1fr;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  #awards .award-item i {
+    width: 46px;
+    height: 46px;
+    font-size: 1.05rem;
+  }
 }
 
 input, textarea { padding: 15px; border: 2px solid #f1f5f9; border-radius: 12px; outline: none; transition: 0.3s; }
 input:focus { border-color: var(--primary); }
 
-.award-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px; /* Espacio entre diferentes premios */
-}
-
-.award-item p {
-  margin: 0; /* Quita el margen por defecto del párrafo */
-}
-
-.award-item i {
-  color: #2563eb; /* O el color que prefieras para tus iconos */
-}
 
 /* Contenedor de iconos */
 .social-contact-icons {
@@ -615,9 +649,9 @@ input:focus { border-color: var(--primary); }
 
 .pub-info strong {
   color: #0f172a;
-  font-size: 2.15rem;
-  line-height: 1;
-  margin-bottom: 6px;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
 }
 
 .pub-links {

@@ -615,9 +615,9 @@ input:focus { border-color: var(--primary); }
 
 .pub-info strong {
   color: #0f172a;
-  font-size: 2.15rem;
-  line-height: 1;
-  margin-bottom: 6px;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
 }
 
 .pub-links {
